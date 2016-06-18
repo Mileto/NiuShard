@@ -19,7 +19,7 @@ namespace Server.Misc
 {
 	public class ServerList
 	{
-		/* 
+        /* 
         * The default setting for Address, a value of 'null', will use your local IP address. If all of your local IP addresses
         * are private network addresses and AutoDetect is 'true' then ServUO will attempt to discover your public IP address
         * for you automatically.
@@ -47,7 +47,7 @@ namespace Server.Misc
         * firewalls) or specific IP adddresses you can do so by modifying the file SocketOptions.cs found in this directory.
         */
 
-		public static readonly string Address = Config.Get("Server.Address", null);
+        public static readonly string Address = "93.57.255.141"; // Config.Get("Server.Address", null);
 
 		public static readonly bool AutoDetect = Config.Get("Server.AutoDetect", true);
 
