@@ -15,7 +15,7 @@ namespace Server
 {
 	public class CurrentExpansion
 	{
-		public static readonly Expansion Expansion = Config.GetEnum<Expansion>("Expansion.CurrentExpansion", Expansion.TOL);
+		public static readonly Expansion Expansion = Config.GetEnum<Expansion>("Expansion.CurrentExpansion", Expansion.ML);
 
 		[CallPriority(Int32.MinValue)]
 		public static void Configure()
@@ -29,7 +29,7 @@ namespace Server
 
 			ObjectPropertyList.Enabled = Core.AOS;
 
-			Mobile.InsuranceEnabled = Core.AOS;
+            Mobile.InsuranceEnabled = !Core.AOS;
 			Mobile.VisibleDamageType = Core.AOS ? VisibleDamageType.Related : VisibleDamageType.None;
 			Mobile.GuildClickMessage = !Core.AOS;
 			Mobile.AsciiClickMessage = !Core.AOS;
