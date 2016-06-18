@@ -4,31 +4,6 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class ClassStone : Item
-    {
-        public override string DefaultName
-        {
-            get
-            {
-                return "Class Stone";
-            }
-        }
-
-        public RaceStone() : base( 0xED4 )
-		{
-            Movable = false;
-            Hue = 0x2D1;
-        }
-
-
-
-    }
-
-
-}
-
-
-    /*
 	public class RaceStone : Item
 	{
 		public override string DefaultName
@@ -67,5 +42,3 @@ namespace Server.Items
 		}
 	}
 }
-
-*/

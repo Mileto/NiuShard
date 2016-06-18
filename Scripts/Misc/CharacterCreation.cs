@@ -189,8 +189,10 @@ namespace Server.Misc
             if (newChar is PlayerMobile)
             {
                 PlayerMobile pm = (PlayerMobile)newChar;
-                pm.AutoRenewInsurance = true;
+                pm.AutoRenewInsurance = false;
+
                 double skillcap = Config.Get("PlayerCaps.SkillCap", 1000.0d) / 10;
+
                 if (skillcap != 100.0)
                 {
                     for (int i = 0; i < Enum.GetNames(typeof(SkillName)).Length; ++i)
@@ -198,11 +200,13 @@ namespace Server.Misc
                 }
                 pm.Profession = args.Profession;
 
+                /*   ELIMINO LO STATO DI YOUNG PLAYER
                 if (pm.IsPlayer() && ((Account)pm.Account).Young)
                     young = pm.Young = true;
-
+                
                 if (pm.Race == Race.Gargoyle) // Gargoyles start with 2000 loyalty points
                     pm.Exp = 2000;
+                */
             }
 
             SetName(newChar, args.Name);
