@@ -47,7 +47,7 @@ namespace Server.Misc
         * firewalls) or specific IP adddresses you can do so by modifying the file SocketOptions.cs found in this directory.
         */
 
-        public static readonly string Address = "93.57.255.141"; // Config.Get("Server.Address", null);
+        public static readonly string Address = Config.Get("Server.Address", "10.19.237.56");
 
 		public static readonly bool AutoDetect = Config.Get("Server.AutoDetect", true);
 
