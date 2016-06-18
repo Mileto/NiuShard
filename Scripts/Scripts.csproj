@@ -35,6 +35,9 @@
   <PropertyGroup>
     <RootNamespace>Server</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -2638,6 +2641,16 @@
     <Compile Include="Mobiles\NPCs\Zeefzorpul.cs" />
     <Compile Include="Quests\WitchApprentice\Objectives.cs" />
     <Compile Include="Quests\WitchApprentice\WitchApprenticeQuest.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\ClassGump.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\PCraftGump.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\RaceGump.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\RaceStone.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\SCraftGump.cs" />
+    <Compile Include="ScriptShardCustom\MOTD\Gump.cs" />
+    <Compile Include="ScriptShardCustom\MOTD\HelpInfo.cs" />
+    <Compile Include="ScriptShardCustom\MOTD\Info.cs" />
+    <Compile Include="ScriptShardCustom\MOTD\Main.cs" />
+    <Compile Include="ScriptShardCustom\MOTD\Utility.cs" />
     <Compile Include="Services\HolidaySettings.cs" />
     <Compile Include="Services\MaginciaBazaar\BazaarAddOns\Alchemist2BazaarAddon.cs">
       <SubType>Code</SubType>
