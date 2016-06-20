@@ -2,6 +2,7 @@
 using Server.Items;
 using Server.Gumps;
 
+/*
 namespace Server.Items
 {
     public class ClassStone : Item
@@ -44,3 +45,5 @@ namespace Server.Items
         }
     }
 }
+
+*/

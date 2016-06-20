@@ -499,9 +499,11 @@ namespace Server.Gumps
                             _HouseSigns.Add(2966);
                             _HouseSigns.Add(3140);
                         }
-					
-                        int signsPerPage = Core.ML ? 24 : 18;
-                        int totalSigns = Core.ML ? 56 : 54;
+
+                        // int signsPerPage = Core.ML ? 24 : 18;
+                        int signsPerPage = 18;
+                        //int totalSigns = Core.ML ? 56 : 54;
+                        int totalSigns = 54;
                         int pages = (int)Math.Ceiling((double)totalSigns / signsPerPage);
 
                         for (int i = 0; i < pages; ++i)

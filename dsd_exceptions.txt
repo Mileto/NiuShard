@@ -4,3 +4,30 @@ System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
 System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
    in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
    in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
+System.IndexOutOfRangeException: Indice oltre i limiti della matrice.
+   in Server.Multis.DesignStateDetailed..ctor(Int32 serial, Int32 revision, Int32 xMin, Int32 yMin, Int32 xMax, Int32 yMax, MultiTileEntry[] tiles)
+   in Server.Multis.DesignStateDetailed.CompressionThread()
