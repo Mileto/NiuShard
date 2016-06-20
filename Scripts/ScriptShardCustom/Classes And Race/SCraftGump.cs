@@ -17,8 +17,7 @@ namespace Server.Gumps
 	{
         private Mobile m;
 
-		public SCraftGump()
-			: base( 0, 0 )
+		public SCraftGump() : base( 0, 0 )
 		{
 			Closable=false;
 			Disposable=false;
@@ -26,8 +25,7 @@ namespace Server.Gumps
 			Resizable=false;
 
 			AddPage(0);
-
-			AddBackground(143, 118, 496, 336, 9200);
+            AddBackground(143, 118, 496, 336, 9200);
 
             AddLabel(224, 146, 1280, @"Secondary Crafting Skill");
 			AddLabel(229, 186, 0, @"Begging");

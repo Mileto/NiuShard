@@ -2641,12 +2641,11 @@
     <Compile Include="Mobiles\NPCs\Zeefzorpul.cs" />
     <Compile Include="Quests\WitchApprentice\Objectives.cs" />
     <Compile Include="Quests\WitchApprentice\WitchApprenticeQuest.cs" />
-    <Compile Include="ScriptShardCustom\Classes And Race\ClassGump.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\SceltaSkillSecStart.cs" />
+    <Compile Include="ScriptShardCustom\Classes And Race\SceltaSkillStartGump.cs" />
     <Compile Include="ScriptShardCustom\Classes And Race\ClassGumpFromStone.cs" />
     <Compile Include="ScriptShardCustom\Classes And Race\ClassStone.cs" />
     <Compile Include="ScriptShardCustom\Classes And Race\PCraftGump.cs" />
-    <Compile Include="ScriptShardCustom\Classes And Race\RaceGump.cs" />
-    <Compile Include="ScriptShardCustom\Classes And Race\RaceStone.cs" />
     <Compile Include="ScriptShardCustom\Classes And Race\SCraftGump.cs" />
     <Compile Include="ScriptShardCustom\MOTD\Gump.cs" />
     <Compile Include="ScriptShardCustom\MOTD\HelpInfo.cs" />

@@ -2,7 +2,7 @@
 using Server.Items;
 using Server.Gumps;
 
-/*
+
 namespace Server.Items
 {
     public class ClassStone : Item
@@ -11,6 +11,8 @@ namespace Server.Items
         {
             get { return "Class Stone"; }
         }
+
+        //definisco la struttura in gioco dell'item.
 
         [Constructable]
         public ClassStone() : base(0xED4)
@@ -22,14 +24,13 @@ namespace Server.Items
         
         public override void OnDoubleClick(Mobile from)
         {
-            from.SendGump(new ClassGump(from));
+            from.SendGump(new ClassFGump(from));
         }
         
-
-        public ClassStone(Serial serial) : base(serial)
+        public ClassStone(Serial serial) : base(serial) //è il costruttore
         {
         }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -43,7 +44,7 @@ namespace Server.Items
 
             int version = reader.ReadInt();
         }
+        
     }
 }
 
-*/

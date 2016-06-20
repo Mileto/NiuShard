@@ -21,7 +21,7 @@ namespace Joeku.MOTD
 		public bool Help;
 		public int Index;
         
-		public MOTD_Gump( Mobile user, bool help, int index ) : base(150, 150) //la posizione iniziale
+		public MOTD_Gump( Mobile user, bool help, int index ) : base(150, 150) //la posizione iniziale perchè fa parte della classe GUmp che di base ha x y
         {
 			this.User = user;
 			this.Help = help;

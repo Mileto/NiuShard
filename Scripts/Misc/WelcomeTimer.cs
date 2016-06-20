@@ -1,4 +1,6 @@
 using System;
+using Server.Gumps;
+
 
 namespace Server.Misc
 {
@@ -24,16 +26,19 @@ namespace Server.Misc
                 "Welcome to this shard.",
                 "Please enjoy your stay."
             });
+
+
         private readonly Mobile m_Mobile;
         private readonly int m_Count;
         private int m_State;
-        public WelcomeTimer(Mobile m)
-            : this(m, m_Messages.Length)
+
+       
+        public WelcomeTimer(Mobile m) : this(m, m_Messages.Length)
         {
         }
+        
 
-        public WelcomeTimer(Mobile m, int count)
-            : base(TimeSpan.FromSeconds(5.0), TimeSpan.FromSeconds(10.0))
+        public WelcomeTimer(Mobile m, int count) : base(TimeSpan.FromSeconds(1.0), TimeSpan.FromSeconds(10.0))
         {
             this.m_Mobile = m;
             this.m_Count = count;
@@ -41,6 +46,10 @@ namespace Server.Misc
 
         protected override void OnTick()
         {
+            if (this.m_State <= 0)
+                //m_Mobile.SendGump(new ClassGump( ClassPage ) );
+                this.m_Mobile.SendGump(new ClassFGump(m_Mobile));
+
             if (this.m_State < this.m_Count)
                 this.m_Mobile.SendMessage(0x35, m_Messages[this.m_State++]);
 

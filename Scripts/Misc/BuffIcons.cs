@@ -75,6 +75,7 @@ namespace Server
         }
 
         private readonly Timer m_Timer;
+
         public Timer Timer
         {
             get

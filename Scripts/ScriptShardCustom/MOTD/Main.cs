@@ -13,10 +13,12 @@ using System.IO;
 using Server;
 using Server.Commands;
 
+
 namespace Joeku.MOTD
 {
 	public class MOTD_Main
 	{
+        public Mobile m;
 		public const int Version = 100;
 		public const string ReleaseDate = "December 4, 2007";
 
@@ -33,9 +35,16 @@ namespace Joeku.MOTD
 			new MOTD_HelpInfo( "Preferences" )
 		};
 
-		public static void Initialize()
+		public void Initialize(Mobile m)
 		{
-			EventSink.Login += new LoginEventHandler( MOTD_Utility.EventSink_OnLogin );
+            this.m = m;
+
+            if (m.Title != null)
+            {
+                EventSink.Login += new LoginEventHandler(MOTD_Utility.EventSink_OnLogin);
+            }
+
+
 			CommandSystem.Register( "MOTD", AccessLevel.Player, new CommandEventHandler( MOTD_Utility.EventSink_OnCommand ) );
 			MOTD_Utility.CheckFiles( false );
 		}

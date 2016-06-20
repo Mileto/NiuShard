@@ -17,8 +17,7 @@ namespace Server.Gumps
     {
         private Mobile m;
 
-        public PCraftGump()
-            : base(0, 0)
+        public PCraftGump() : base(0, 0)
         {
             Closable = false;
             Disposable = false;
