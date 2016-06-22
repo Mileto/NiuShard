@@ -122,6 +122,7 @@ namespace Server.Menus.Questions
         private readonly Mobile m_Sender;
         private readonly bool m_MarkUse;
         private Timer m_Timer;
+
         public StuckMenu(Mobile beholder, Mobile beheld, bool markUse)
             : base(150, 50)
         {
@@ -295,7 +296,9 @@ namespace Server.Menus.Questions
                     int idx = Utility.Random(this.m_Destination.Locations.Length);
                     Point3D dest = this.m_Destination.Locations[idx];
 
-                    Map destMap;
+                    Map destMap = Map.Felucca;
+
+                    /*
                     if (this.m_Mobile.Map == Map.Trammel)
                         destMap = Map.Trammel;
                     else if (this.m_Mobile.Map == Map.Felucca)
@@ -304,6 +307,8 @@ namespace Server.Menus.Questions
                         destMap = m_Mobile.LogoutMap == Map.Felucca ? Map.Felucca : Map.Trammel;
                     else
                         destMap = this.m_Mobile.Kills >= 5 ? Map.Felucca : Map.Trammel;
+
+                    */
 
                     if (m_Mobile.Map != Map.Internal)
                     {

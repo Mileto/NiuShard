@@ -43,9 +43,7 @@ namespace Joeku.MOTD
             {
                 EventSink.Login += new LoginEventHandler(MOTD_Utility.EventSink_OnLogin);
             }
-
-
-			CommandSystem.Register( "MOTD", AccessLevel.Player, new CommandEventHandler( MOTD_Utility.EventSink_OnCommand ) );
+        	CommandSystem.Register( "MOTD", AccessLevel.Player, new CommandEventHandler( MOTD_Utility.EventSink_OnCommand ) );
 			MOTD_Utility.CheckFiles( false );
 		}
 	}

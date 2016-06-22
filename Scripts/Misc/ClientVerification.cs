@@ -25,6 +25,7 @@ namespace Server.Misc
             LenientKick,
             Kick
         }
+
         public static ClientVersion Required
         {
             get
@@ -36,6 +37,7 @@ namespace Server.Misc
                 m_Required = value;
             }
         }
+
         public static bool AllowRegular
         {
             get
@@ -85,7 +87,7 @@ namespace Server.Misc
             EventSink.ClientVersionReceived += new ClientVersionReceivedHandler(EventSink_ClientVersionReceived);
 
             //ClientVersion.Required = null;
-            //Required = new ClientVersion( "6.0.0.0" );
+            //Required = new ClientVersion( "4.0.11c" );
 
             if (m_DetectClientRequirement)
             {

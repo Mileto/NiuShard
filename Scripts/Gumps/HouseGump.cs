@@ -9,8 +9,7 @@ namespace Server.Gumps
     public class HouseListGump : Gump
     {
         private readonly BaseHouse m_House;
-        public HouseListGump(int number, ArrayList list, BaseHouse house, bool accountOf)
-            : base(20, 30)
+        public HouseListGump(int number, ArrayList list, BaseHouse house, bool accountOf) : base(20, 30)
         {
             if (house.Deleted)
                 return;

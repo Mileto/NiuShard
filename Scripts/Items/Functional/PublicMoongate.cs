@@ -168,7 +168,7 @@ namespace Server.Items
             {
                 Item item = new PublicMoongate();
 
-                item.MoveToWorld(entry.Location, list.Map);
+                item.MoveToWorld(entry.Location, list.Map); 
 
                 if (entry.Number == 1060642) // Umbra
                     item.Hue = 0x497;
@@ -266,6 +266,7 @@ namespace Server.Items
 				new PMEntry(new Point3D(852, 3526, -43), 1113603), // Royal City
 				new PMEntry(new Point3D(926, 3989, -36), 1112572), // Holy City
 			});
+
         public static readonly PMList[] UORLists = new PMList[] { Trammel, Felucca };
         public static readonly PMList[] UORListsYoung = new PMList[] { Trammel };
         public static readonly PMList[] LBRLists = new PMList[] { Trammel, Felucca, Ilshenar };
@@ -276,12 +277,13 @@ namespace Server.Items
         public static readonly PMList[] SEListsYoung = new PMList[] { Trammel, Ilshenar, Malas, Tokuno };
 		public static readonly PMList[] SALists	= new PMList[] { Trammel, Felucca, Ilshenar, Malas, Tokuno, TerMur };
 		public static readonly PMList[] SAListsYoung = new PMList[] { Trammel, Ilshenar, Malas, Tokuno, TerMur };
-        public static readonly PMList[] RedLists = new PMList[] { Felucca };
+        public static readonly PMList[] RedLists = new PMList[] { Felucca }; //A ME BASTA USARE QUESTA, come se i miei personaggi fossero Rossi
         public static readonly PMList[] SigilLists = new PMList[] { Felucca };
         private readonly int m_Number;
         private readonly int m_SelNumber;
         private readonly Map m_Map;
         private readonly PMEntry[] m_Entries;
+
         public PMList(int number, int selNumber, Map map, PMEntry[] entries)
         {
             this.m_Number = number;
@@ -325,6 +327,7 @@ namespace Server.Items
         private readonly Mobile m_Mobile;
         private readonly Item m_Moongate;
         private readonly PMList[] m_Lists;
+
         public MoongateGump(Mobile mobile, Item moongate)
             : base(100, 100)
         {
@@ -333,6 +336,15 @@ namespace Server.Items
 
             PMList[] checkLists;
 
+            //NON AVENDO NIENT'altro che FELUCCA.
+            checkLists = PMList.RedLists;
+
+            if(mobile.AccessLevel >= AccessLevel.Spawner)
+            {
+                checkLists = PMList.SALists;
+            }
+
+            /*
             if (mobile.Player)
             {
                 if (Factions.Sigil.ExistsOn(mobile))
@@ -364,6 +376,8 @@ namespace Server.Items
             {
                 checkLists = PMList.SELists;
             }
+
+            */
 
             this.m_Lists = new PMList[checkLists.Length];
 

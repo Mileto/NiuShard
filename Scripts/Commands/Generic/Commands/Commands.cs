@@ -521,8 +521,11 @@ namespace Server.Commands.Generic
 
             Point3D fromLoc = from.Location;
             Point3D toLoc = new Point3D(p);
-
+            
+            //RIMANE ALLA SOLITA Z
             from.Location = toLoc;
+            toLoc.Z = from.Z;
+
             from.ProcessDelta();
 
             if (!from.Hidden)

@@ -19,7 +19,7 @@ namespace Server.Gumps
 
         public ClassFGump(Mobile m) : base(0, 0)
         {
-            Closable = true;
+            Closable = false;
             Disposable = false;
             Dragable = false;
             Resizable = false;

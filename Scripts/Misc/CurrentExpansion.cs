@@ -15,14 +15,14 @@ namespace Server
 {
 	public class CurrentExpansion
 	{
-		public static readonly Expansion Expansion = Config.GetEnum<Expansion>("Expansion.CurrentExpansion", Expansion.ML);
+		public static readonly Expansion Expansion = Config.GetEnum<Expansion>("Expansion.CurrentExpansion", Expansion.TOL);
 
 		[CallPriority(Int32.MinValue)]
 		public static void Configure()
 		{
 			Core.Expansion = Expansion;
 
-			AccountGold.Enabled = Core.TOL;
+			AccountGold.Enabled = !Core.TOL;
 			AccountGold.ConvertOnBank = true;
 			AccountGold.ConvertOnTrade = false;
 			VirtualCheck.UseEditGump = true;

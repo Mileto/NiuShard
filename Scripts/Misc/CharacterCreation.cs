@@ -10,7 +10,7 @@ namespace Server.Misc
 {
     public class CharacterCreation
     {
-        private static readonly CityInfo m_NewHavenInfo = new CityInfo("New Haven", "The Bountiful Harvest Inn", 5435, 1143, 0, Map.Trammel);
+        private static readonly CityInfo m_NewHavenInfo = new CityInfo("Lost Island", "The nothing", 6432, 1240, 10, Map.Felucca);
         private static Mobile m_Mobile;
 
         public static void Initialize()
